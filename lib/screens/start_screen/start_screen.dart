@@ -28,7 +28,7 @@ class StartScreen extends StatelessWidget {
                 height: getProportionateScreenHeight(20),
               ),
               Padding(
-                padding: EdgeInsets.only(left: 20.0),
+                padding: const EdgeInsets.only(left: 20.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -48,12 +48,12 @@ class StartScreen extends StatelessWidget {
                         SizedBox(
                           width: getProportionateScreenWidth(12),
                         ),
-                        Text(
-                          'Lossy',
+                        const Text(
+                          'WeightTracker',
                           style: TextStyle(
                             color: Colors.grey,
                             fontWeight: FontWeight.bold,
-                            fontSize: 20,
+                            fontSize: 18,
                           ),
                         ),
                       ],
@@ -95,7 +95,7 @@ class StartScreen extends StatelessWidget {
                     SizedBox(
                       height: getProportionateScreenHeight(60),
                     ),
-                    Text(
+                    const Text(
                       'Start to measure your weight every day and analyze your dynamic.',
                       style: TextStyle(
                         fontSize: 18,
@@ -123,18 +123,18 @@ class StartScreen extends StatelessWidget {
                       // Navigator.of(context)
                       //     .pushReplacementNamed(AuthScreen.routeName);
                     },
-                    child: Text(
-                      'Start',
-                      style: TextStyle(
-                        fontSize: 28,
-                      ),
-                    ),
                     style: ElevatedButton.styleFrom(
                       padding: EdgeInsets.symmetric(
                         horizontal: getProportionateScreenWidth(135),
                         vertical: getProportionateScreenHeight(13),
                       ),
-                      shape: StadiumBorder(),
+                      shape: const StadiumBorder(),
+                    ),
+                    child: const Text(
+                      'Start',
+                      style: TextStyle(
+                        fontSize: 28,
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -149,7 +149,7 @@ class StartScreen extends StatelessWidget {
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           'Login',
                           style: TextStyle(
                             color: Color.fromARGB(255, 30, 158, 83),
