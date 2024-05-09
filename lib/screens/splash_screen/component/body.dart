@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:weight_track/screens/start_screen/start_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -12,8 +13,8 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(Duration(seconds: 1), () {
-      // Navigator.pushReplacement(context,MaterialPageRoute(
-      //   builder:(context)=> start_screen))
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => StartScreen()));
     });
   }
 
@@ -27,8 +28,8 @@ class _SplashScreenState extends State<SplashScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-              width: 100,
-              height: 100,
+              width: 500,
+              height: 500,
               child: Image.asset('assets/images/logo.webp')),
           const SizedBox(
             height: 30,

@@ -10,15 +10,15 @@
 //   @override
 //   Widget build(BuildContext context) {
 //      return
-//     // BaseView<DetailsScreenViewModel>(
-//     //     onModelReady: (model) => {},
-//     //     builder: (context, model, child) {
+//     BaseView<DetailsScreenViewModel>(
+//         onModelReady: (model) => {},
+//         builder: (context, model, child) {
 //            SingleChildScrollView(
 //             physics: ScrollPhysics(),
 //             child: Body(
-//               // model: model,
+//               model: model,
 //             ),
 //           );
-//         // });
+//         });
 //   }
 // }

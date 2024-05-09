@@ -1,5 +1,6 @@
 // import 'package:flutter/material.dart';
 // import 'package:fluttertoast/fluttertoast.dart';
+// import 'package:weight_track/screens/home_screen/home_screen.dart';
 
 // class AuthForm extends StatefulWidget {
 //   // final AuthScreenViewModel model;
@@ -26,7 +27,7 @@
 //           child: Padding(
 //             padding: EdgeInsets.all(16),
 //             child: Form(
-//               // key: widget.model.formKey,
+//               key: widget.model.formKey,
 //               child: Column(
 //                 mainAxisSize: MainAxisSize.min,
 //                 children: [
@@ -71,24 +72,24 @@
 //                       }
 //                       return null;
 //                     },
-//                     // obscureText: !widget.model.showPassword,
-//                     // decoration: InputDecoration(
-//                     //   labelText: 'Password',
-//                     //   suffixIcon: IconButton(
-//                     //     // icon: Icon(
-//                     //     //   // widget.model.showPassword
-//                     //     //       ? Icons.visibility
-//                     //     //       : Icons.visibility_off,
-//                     //     ),
-//                     //     onPressed: () {
-//                     //       widget.model.changePasswordVisibility();
-//                     //     },
-//                     //   ),
+//                     obscureText: !widget.model.showPassword,
+//                     decoration: InputDecoration(
+//                       labelText: 'Password',
+//                       suffixIcon: IconButton(
+//                         icon: Icon(
+//                           widget.model.showPassword
+//                               ? Icons.visibility
+//                               : Icons.visibility_off,
+//                         ),
+//                         onPressed: () {
+//                           widget.model.changePasswordVisibility();
+//                         },
+//                       ),
 //                     ),
-//                     // onSaved: (value) {
-//                     //   widget.model.userPassword = value as String;
-//                     // },
-//                   // ),
+//                     onSaved: (value) {
+//                       widget.model.userPassword = value as String;
+//                     },
+//                   ),
 //                   SizedBox(
 //                     height: 20,
 //                   ),
@@ -102,36 +103,36 @@
 //                         });
 //                         bool isSuccess = await widget.model.trySubmit(context);
 //                         if (isSuccess) {
-//                           Navigator.of(context)
-//                               .pushReplacementNamed(HomeScreen.routeName);
+//                           Navigator.pushReplacement(context,MaterialPageRoute(
+//         builder:(context)=> HomeScreen()));
 //                         } else {
 //                           setState(() {
 //                             isLoading = false;
 //                           });
 //                           Fluttertoast.showToast(
 //                               msg:
-//                                   'Oops! An error occurred while passing credentials');
+//                           'Oops! An error occurred while passing credentials');
 //                         }
 //                       },
-//                       // child: Text(
-//                       //   widget.model.isLogin ? 'Login' : 'Signup',
-//                       // ),
+//                       child: Text(
+//                         widget.model.isLogin ? 'Login' : 'Signup',
+//                       ),
 //                     ),
 //                   if (!isLoading)
-//                     // TextButton(
-//                     //   onPressed: () {
-//                     //     widget.model.changeLoginType();
-//                     //   },
-//                     //   child: Text(
-//                     //     widget.model.isLogin
-//                     //         ? 'Create New Account'
-//                     //         : 'I already have an account',
-//                     //     style: TextStyle(
-//                     //       color: Theme.of(context).primaryColor,
-//                     //     ),
-//                     //   ),
-//                     // ),
-//                 // ],
+//                     TextButton(
+//                       onPressed: () {
+//                         widget.model.changeLoginType();
+//                       },
+//                       child: Text(
+//                         widget.model.isLogin
+//                             ? 'Create New Account'
+//                             : 'I already have an account',
+//                         style: TextStyle(
+//                           color: Theme.of(context).primaryColor,
+//                         ),
+//                       ),
+//                     ),
+//                 ],
               
 //               ),
 //             ),

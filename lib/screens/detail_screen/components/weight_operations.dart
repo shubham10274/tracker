@@ -10,7 +10,7 @@ class WeightOperations {
           return CustomDialogBox(
             title: 'Add new weight',
             descriptions: 'Lose weight & keep fit',
-            image: "assets/images/add.png",
+            // image: "assets/images/add.png",
             // controller: model.addweightController,
             buttonText: 'Add',
             press1: () async {
@@ -48,7 +48,7 @@ class WeightOperations {
           return CustomDialogBox(
             title: 'Delete weight?',
             descriptions: 'This entry will be permanently deleted!',
-            image: "assets/images/delete.png",
+            // image: "assets/images/delete.png",
             buttonText: 'Delete',
             press1: () async {
               // model.delete(docId: docId);

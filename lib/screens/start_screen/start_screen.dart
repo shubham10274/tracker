@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:weight_track/screens/auth_screen/auth_screen.dart';
 import 'package:weight_track/size_config/size_config.dart';
 
 class StartScreen extends StatelessWidget {
+  static String routeName = '/start-screen';
   StartScreen({Key? key}) : super(key: key);
 
   final controller = PageController(
@@ -120,8 +122,10 @@ class StartScreen extends StatelessWidget {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      // Navigator.of(context)
-                      //     .pushReplacementNamed(AuthScreen.routeName);
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => AuthScreen()));
                     },
                     style: ElevatedButton.styleFrom(
                       padding: EdgeInsets.symmetric(

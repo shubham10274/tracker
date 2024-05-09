@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:weight_track/size_config/size_config.dart';
 
 class AuthScreen extends StatelessWidget {
-  // static String routeName = '/auth-screen';
+  static String routeName = '/auth-screen';
   const AuthScreen({Key? key}) : super(key: key);
 
   @override

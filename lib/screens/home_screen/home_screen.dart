@@ -7,7 +7,7 @@ import 'package:weight_track/widget/custom_view_navigation_bar.dart';
 // import 'package:weight_tracker/src/screens/details_screen/details_screen.dart';
 
 class HomeScreen extends StatelessWidget {
-  // static String routeName = '/home-screen';
+  static String routeName = '/home-screen';
   final ThemeMode? themeMode;
   final ValueChanged<ThemeMode>? onThemeModeChanged;
   final FlexSchemeData? flexSchemeData;
